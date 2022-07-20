@@ -4,10 +4,12 @@
   "description": "",
   "scripts": {
     "local-getGreetings": "serverless invoke local -f getGreetings '{\"param1\":\"value1\"}'",
+    "local-api": "serverless offline start --printOutput",
+
     "remote-getGreetings": "serverless invoke -f getGreetings -d '{\"param1\":\"value1\"}'",
+
     "deploy": "serverless deploy --verbose",
-    "remove": "serverless remove",
-    "local-api": "sls offline start"
+    "remove": "serverless remove"
   },
   "keywords": [],
   "author": "",

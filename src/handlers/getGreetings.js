@@ -1,9 +1,9 @@
 // 'use strict'
 
-module.exports.main = (event, context, callback) => {
+module.exports.main = async (event, context, callback) => {
 
   const mybody = {
-      message: 'hello world',
+      message: 'hello world!',
       event: event,
       context: context
   }
@@ -14,6 +14,6 @@ module.exports.main = (event, context, callback) => {
     headers: { 'content-type': 'application/json'}
   }
 
-  callback(null, response);
+  return response;
 
 }
