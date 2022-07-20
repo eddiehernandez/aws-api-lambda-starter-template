@@ -16,3 +16,6 @@ functions:
       - httpApi:
           path: /greetings
           method: get
+
+plugins:
+  - serverless-offline

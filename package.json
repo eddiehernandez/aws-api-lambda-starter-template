@@ -7,9 +7,12 @@
     "remote-getGreetings": "serverless invoke -f getGreetings -d '{\"param1\":\"value1\"}'",
     "deploy": "serverless deploy --verbose",
     "remove": "serverless remove",
-    "dev": "serverless offline"
+    "local-api": "sls offline start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-offline": "^9.0.0"
+  }
 }
